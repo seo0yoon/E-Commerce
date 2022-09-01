@@ -12,12 +12,10 @@
     justify-content: space-between;
     align-items: center;
     .navLogo {
-      img {
-      }
     }
     .navMenu {
       display: flex;
-      color: $gray;
+      color: #bcbcbc;
       li {
         margin-right: 40px;
       }
