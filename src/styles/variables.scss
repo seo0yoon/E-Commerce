@@ -3,6 +3,12 @@
   justify-content: center;
   align-items: center;
 }
+
+@mixin flexCenter2 {
+  display: flex;
+  justify-content: center;
+}
+
 @mixin flexBetween {
   display: flex;
   justify-content: space-between;
@@ -10,14 +16,8 @@
 }
 
 @mixin defaultWidth {
-  width: 1600px;
-  margin: auto;
+  width: 100%;
+  min-width: 1200px;
 }
 
-@mixin smallFont($fontSize) {
-  font-size: 14px;
-}
-
-@mixin MediumFont($fontSize) {
-  font-size: 14px;
-}
+$mainGray: #d8d8d8;

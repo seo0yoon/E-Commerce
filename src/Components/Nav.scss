@@ -1,22 +1,20 @@
 @import "../styles//variables.scss";
 
 .nav {
-  width: 100%;
-  min-width: 900px;
   @include flexCenter;
+  @include defaultWidth;
   background-color: #fff;
 
   .navWrap {
-    //1600 수정해야함
+    @include flexBetween;
     width: 1600px;
     height: 80px;
-    @include flexBetween;
 
     .liWrap {
       .navMenu {
-        width: 601px;
         @include flexCenter;
-        color: #a5a4a4;
+        width: 601px;
+        color: gray;
 
         li:not(:last-of-type) {
           margin-right: 16px;
