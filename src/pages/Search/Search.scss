@@ -3,37 +3,55 @@
 .search {
   width: 100%;
   height: 100px;
-  display: flex;
-  justify-content: center;
+  @include flexCenter;
   background-color: #d8d8d8;
+
   .searchWrap {
-    width: 1600px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    //1600 수정해야함
+    width: 1200px;
+    @include flexBetween;
+
     .categoryWrap {
       display: flex;
-      img {
+
+      .categoryIcon {
         width: 24px;
         height: 24px;
       }
+
       .categoryTxt {
         margin: 3px 0 5px 8px;
       }
     }
-    .searchInput {
-      input {
-        width: 601px;
-        height: 50px;
-        padding: 13px 16px;
-        background-color: #fff;
+
+    .inputWrap {
+      margin-right: 50px;
+
+      .inputBox {
+        position: relative;
+
+        input {
+          width: 600px;
+          height: 50px;
+          padding: 13px 16px;
+          background-color: #fff;
+        }
+
+        .searchIcon {
+          position: absolute;
+          top: 13px;
+          right: 16px;
+        }
       }
     }
+
     .userInfo {
-      img {
-      }
-      select {
+      .select {
         background-color: #d8d8d8;
+      }
+
+      .cartIcon {
+        margin-left: 16px;
       }
     }
   }
