@@ -2,13 +2,14 @@
 
 .search {
   width: 100%;
-  height: 100px;
+  min-width: 900px;
   @include flexCenter;
   background-color: #d8d8d8;
 
   .searchWrap {
     //1600 수정해야함
-    width: 1200px;
+    width: 1600px;
+    height: 100px;
     @include flexBetween;
 
     .categoryWrap {
