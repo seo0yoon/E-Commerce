@@ -1,0 +1,11 @@
+@import "./variables.scss";
+
+* {
+  box-sizing: border-box;
+  outline: none;
+  font-family: "Nanum Gothic", sans-serif;
+}
+
+.txt-bold {
+  font-weight: 700;
+}
