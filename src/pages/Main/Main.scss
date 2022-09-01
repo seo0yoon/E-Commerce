@@ -53,7 +53,6 @@
 
         p {
           margin-bottom: 65px;
-          font-size: 16px;
           color: rgb(98, 96, 96);
 
           .percent {
@@ -83,20 +82,16 @@
         img {
           margin-right: 12px;
         }
-
-        .txt {
-          font-size: 16px;
-        }
       }
     }
   }
-
   .saleContents {
     @include flexCenter;
     width: 100%;
 
     .saleContentsWrap {
       display: flex;
+      margin-bottom: 131px;
 
       .saleLeft {
         width: 780px;
@@ -112,10 +107,12 @@
         }
       }
       .column {
+        div:not(:last-of-type) {
+          margin-bottom: 40px;
+        }
         .saleColumn {
           width: 780px;
           height: 370px;
-          margin-bottom: 40px;
           padding: 69px 417px 66px 50px;
         }
 
@@ -126,6 +123,78 @@
           margin-bottom: 40px;
         }
       }
+    }
+  }
+
+  .newArrivals {
+    @include defaultWidth;
+    @include flexCenter;
+    .newWrap {
+      width: 1600px;
+      .newTxt {
+        @include flexBetween;
+        margin-bottom: 51px;
+        .newTit {
+          font-size: 39px;
+        }
+        .viewAll {
+          font-size: 16px;
+          font-weight: bold;
+          color: #69b2d3;
+          margin-top: 29px;
+        }
+      }
+    }
+  }
+  .newBoxItem {
+    @include flexCenter;
+    @include defaultWidth;
+
+    .newBoxWrap {
+      width: 1600px;
+
+      .newBox {
+        position: relative;
+        width: 370px;
+        height: 370px;
+        margin-bottom: 26px;
+        background-color: $mainGray;
+
+        .newBtn {
+          position: absolute;
+          top: 20px;
+          left: 20px;
+          width: 92px;
+          height: 35px;
+          padding: 10px 30px 9px 32px;
+          background-color: #262626;
+          color: #fff;
+          font-size: 14px;
+          font-weight: bold;
+        }
+
+        .inner {
+          position: absolute;
+          right: 0;
+          bottom: 0;
+        }
+      }
+    }
+  }
+
+  .newProductTxt {
+    .newProductFlex {
+      @include flexBetween;
+      width: 370px;
+
+      .newProductName {
+        font-size: 20px;
+        font-weight: bold;
+      }
+    }
+
+    .newProductColor {
+      margin-top: 22px;
     }
   }
 }
