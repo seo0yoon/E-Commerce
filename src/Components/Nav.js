@@ -8,13 +8,16 @@ const Nav = () => {
         <div className="navLogo">
           <img src="/images/Logo.svg" alt="logo" />
         </div>
-        <ul className="navMenu">
-          <li>Home</li>
-          <li>Shop</li>
-          <li>About</li>
-          <li>Contacts</li>
-          <li>Journal</li>
-        </ul>
+        <div className="liWrap">
+          <ul className="navMenu">
+            <li>Home</li>
+            <li>Shop</li>
+            <li>About</li>
+            <li>Contacts</li>
+            <li>Journal</li>
+          </ul>
+        </div>
+
         <ul className="navLang">
           <li>EN</li>
           <li>RU</li>
