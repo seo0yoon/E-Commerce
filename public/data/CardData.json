@@ -1,0 +1,34 @@
+[
+  {
+    "id": 0,
+    "img": "../../../public/images/Icon_cart.png",
+    "button": "New",
+    "name": "Basic Crew Neck Tee",
+    "price": "$44.00",
+    "color": "Black"
+  },
+  {
+    "id": 1,
+    "img": "../../../public/images/Icon_cart.png",
+    "button": "New",
+    "name": "Basic Crew Neck Tee",
+    "price": "$44.00",
+    "color": "Black"
+  },
+  {
+    "id": 2,
+    "img": "../../../public/images/Icon_cart.png",
+    "button": "New",
+    "name": "Basic Crew Neck Tee",
+    "price": "$44.00",
+    "color": "Black"
+  },
+  {
+    "id": 3,
+    "img": "../../../public/images/Icon_cart.png",
+    "button": "New",
+    "name": "Basic Crew Neck Tee",
+    "price": "$44.00",
+    "color": "Black"
+  }
+]
