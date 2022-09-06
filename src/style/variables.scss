@@ -4,20 +4,25 @@
   align-items: center;
 }
 
-@mixin flexCenter2 {
-  display: flex;
-  justify-content: center;
-}
-
 @mixin flexBetween {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-@mixin defaultWidth {
+@mixin flexCenterTwo {
+  display: flex;
+  align-items: center;
+}
+
+@mixin justifyCenterTwo {
+  display: flex;
+  justify-content: center;
+}
+
+@mixin maxWidth {
   width: 100%;
-  min-width: 1200px;
+  max-width: 1600px;
 }
 
 $black: #262626;

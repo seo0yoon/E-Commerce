@@ -7,16 +7,15 @@
     background-color: $white-1;
 
     .wrapper {
+      @include flexCenter;
+      position: relative;
       width: 1600px;
       height: 100px;
-      position: relative;
-      @include flexCenter;
 
       .category {
         position: absolute;
+        @include flexCenterTwo;
         left: 0px;
-        display: flex;
-        align-items: center;
         gap: 8px;
         cursor: pointer;
 
@@ -62,7 +61,7 @@
         display: flex;
         position: absolute;
         right: 0px;
-        column-gap: 16px;
+        gap: 16px;
 
         .mymenus {
           display: flex;
