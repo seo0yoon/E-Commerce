@@ -1,9 +1,9 @@
-import React from 'react';
-import Item from './components/Item/Item';
+import React from "react";
+import Item from "./components/Item/Item";
 
 function Items({ item: { title, item } }) {
   return (
-    <div className="block">
+    <div className="items-block">
       <div className="wrapper">
         <div className="context">
           <div className="title txt-bold">{title}</div>

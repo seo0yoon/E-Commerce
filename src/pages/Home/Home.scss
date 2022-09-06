@@ -1,9 +1,9 @@
 @import "../../style/variables.scss";
-
+//전체 영역 지정
 .home {
   display: flex;
   flex-direction: column; //요소들을 다 수직으로 배치
-
+  //배너 영역 시작
   .banner {
     @include flexCenter;
     width: 100%;
@@ -75,7 +75,8 @@
       }
     }
   }
-
+  //
+  //리퍼 영역 시작
   .refer {
     @include justifyCenterTwo;
     width: 100%;
@@ -85,10 +86,10 @@
       @include flexBetween;
       @include maxWidth;
       position: relative;
-      height: 80px;
 
       .block {
         @include flexCenterTwo;
+        height: 80px;
         gap: 12px;
 
         .icon {
@@ -103,12 +104,11 @@
       }
     }
   }
-
+  //
+  //세일 영역 (가운데 컨텐츠부분)
   .sales {
     @include justifyCenterTwo;
     width: 100%;
-    height: 920px;
-    background-color: red;
 
     .wrapper {
       @include maxWidth;
@@ -118,6 +118,19 @@
       margin-top: 140px;
       gap: 40px;
 
+      .left {
+        .sale {
+          height: 100%;
+        }
+      }
+
+      .right {
+        height: 100%;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 40px;
+      }
+      //세일 텍스트 컴포넌트 영역
       .sale {
         @include justifyCenterTwo;
         flex-direction: column;
@@ -154,50 +167,27 @@
           cursor: pointer;
         }
       }
-
-      .left {
-        .sale {
-          height: 100%;
-        }
-      }
-
-      .right {
-        height: 100%;
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        row-gap: 40px;
-      }
     }
   }
-
-  & > .block {
+  //new arrivals 영역
+  .items-block {
+    @include justifyCenterTwo;
     margin-top: 131px;
     width: 100%;
-    height: 570px;
-    display: flex;
-    justify-content: center;
-    background-color: blue;
 
     .wrapper {
-      max-width: 1600px;
-      width: 100%;
-      height: 100%;
+      @include maxWidth;
 
       .context {
-        width: 100%;
-        height: 45px;
-        position: relative;
+        display: flex;
+        justify-content: space-between;
 
         .title {
-          position: absolute;
-          left: 0px;
           font-size: 39px;
           line-height: 1.15;
         }
 
         .view-all {
-          position: absolute;
-          right: 0px;
           font-weight: bold;
           line-height: 1.88;
           color: $greyblue;
@@ -205,38 +195,35 @@
         }
       }
 
-      & > .items {
+      .items {
         margin-top: 51px;
         width: 100%;
-        height: 100%;
 
         .item {
           display: grid;
-          grid-template-columns: repeat(4, 1fr);
-          column-gap: 40px;
-
-          .contents {
+          grid-template-columns: repeat(4, auto);
+          gap: 40px;
+          //new arrivals 네모 컨텐츠 영역
+          .item-contents {
             .content {
               position: relative;
               padding-left: 20px;
               padding-top: 20px;
-              box-sizing: border-box;
               height: 370px;
               background-color: $grey-4;
               cursor: pointer;
+              //안에 요소 숨기기
               overflow: hidden;
-
+              //new 뱃지
               .badge {
-                display: flex;
-                justify-content: center;
-                align-items: center;
+                @include flexCenter;
                 width: 92px;
                 height: 35px;
                 background-color: black;
                 font-size: 14px;
                 color: white;
               }
-
+              //마우스를 올리면 올라오는 애니메이션
               .options {
                 width: 100%;
                 height: 156px;
@@ -249,34 +236,24 @@
                 flex-direction: column;
                 align-items: flex-end;
                 padding: 26px 24px 27px 0;
-                box-sizing: border-box;
-
                 .lists {
                   width: 100%;
                   display: flex;
+                  justify-content: center;
                   flex-direction: column;
                   align-items: flex-end;
                   color: $grey-2;
+                  gap: 23px;
 
-                  .wish-list {
+                  .list {
                     display: flex;
-                    column-gap: 8px;
+                    gap: 8px;
                     line-height: 1.19;
                     cursor: pointer;
-                  }
 
-                  .compare {
-                    display: flex;
-                    column-gap: 8px;
-                    line-height: 1.19;
-                    cursor: pointer;
-                  }
-
-                  .add-cart {
-                    display: flex;
-                    column-gap: 8px;
-                    line-height: 1.19;
-                    cursor: pointer;
+                    .context {
+                      align-items: center;
+                    }
                   }
                 }
               }
@@ -289,27 +266,24 @@
                 bottom: -156px;
               }
             }
-
-            & > .context {
+            //박스상자 하단 컨텐츠 제목 가격 색상
+            .bottom-context {
+              @include flexBetween;
               margin-top: 26px;
               position: relative;
 
-              .title {
-                position: absolute;
-                left: 0px;
+              .bottom-title {
                 font-size: 20px;
                 line-height: 1.15;
               }
 
-              .price {
-                position: absolute;
-                right: 0px;
+              .bottom-price {
                 line-height: 1.88;
                 color: $grey-2;
               }
             }
 
-            .detail {
+            .bottom-detail {
               margin-top: 22px;
               color: $grey-2;
             }
@@ -318,25 +292,22 @@
       }
     }
   }
-
+  //tophone 배너 시작
   .to-phone {
-    margin-top: 135px;
+    @include flexCenter;
+    flex-direction: column;
     width: 100%;
     height: 370px;
+    margin-top: 135px;
     background-color: $grey-4;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    white-space: nowrap;
 
-    & > .title {
+    .title {
       font-size: 39px;
       line-height: 1.15;
       color: white;
     }
 
-    & > .context {
+    .context {
       margin-top: 46px;
       line-height: 1.88;
       color: white;
