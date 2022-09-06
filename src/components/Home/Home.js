@@ -1,23 +1,19 @@
-import React from 'react';
-import Sale from './components/Sale/Sale';
-import { useSelector } from 'react-redux';
-import './css/index.css';
-import Items from './components/Items/Items';
-import Gauge from './components/Gauge/gauge';
-import ToJournal from './components/ToJournal/ToJournal';
+import React from "react";
+import Sale from "./components/Sale/Sale";
+import { useSelector } from "react-redux";
+import "./css/index.css";
+import Items from "./components/Items/Items";
+import Gauge from "./components/Gauge/gauge";
+import ToJournal from "./components/ToJournal/ToJournal";
 
 function Home() {
-  const finalOfferSet = useSelector(state => state.layouts.home.finalOffer);
-  const arrivalsSet = useSelector(
-    state => state.layouts.home.contents.newArrivals,
-  );
-  const bestSellersSet = useSelector(
-    state => state.layouts.home.contents.bestSellers,
-  );
-  const offersSet = useSelector(state => state.layouts.home.contents.offers);
-  const phonesSet = useSelector(state => state.layouts.phones);
-  const salesSet = useSelector(state => state.layouts.sales);
-  const journalLink = useSelector(state => state.layouts.home.journal);
+  const finalOfferSet = useSelector((state) => state.layouts.home.finalOffer);
+  const arrivalsSet = useSelector((state) => state.layouts.home.contents.newArrivals);
+  const bestSellersSet = useSelector((state) => state.layouts.home.contents.bestSellers);
+  const offersSet = useSelector((state) => state.layouts.home.contents.offers);
+  const phonesSet = useSelector((state) => state.layouts.phones);
+  const salesSet = useSelector((state) => state.layouts.sales);
+  const journalLink = useSelector((state) => state.layouts.home.journal);
 
   return (
     <div className="home">
@@ -70,8 +66,7 @@ function Home() {
       <div className="to-phone">
         <div className="title txt-bold">Phone of the Year</div>
         <div className="context">
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry orem Ipsum..
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry orem Ipsum..
         </div>
         <div className="btn txt-bold">Shop Now</div>
       </div>
@@ -82,9 +77,8 @@ function Home() {
         <div className="wrapper">
           <div className="title txt-bold">Brands We Love</div>
           <div className="context">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore tempor sed do magna
-            aliqua.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore tempor sed do magna aliqua.
           </div>
           <ul className="contents">
             <li className="content">
