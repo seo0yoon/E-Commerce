@@ -2,18 +2,14 @@
 
 #root {
   .header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flexCenter;
     width: 100%;
 
     & > .wrapper {
       position: relative;
       width: 1600px;
       height: 80px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      @include flexCenter;
 
       .logo {
         position: absolute;
@@ -37,7 +33,7 @@
         position: absolute;
         right: 0px;
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2, auto);
         column-gap: 16px;
 
         .language {

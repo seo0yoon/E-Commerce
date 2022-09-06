@@ -2,26 +2,22 @@
 
 #root {
   .search {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flexCenter;
     width: 100%;
     background-color: $white-1;
 
-    & > .wrapper {
+    .wrapper {
       width: 1600px;
       height: 100px;
       position: relative;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      @include flexCenter;
 
       .category {
         position: absolute;
         left: 0px;
         display: flex;
         align-items: center;
-        column-gap: 8px;
+        gap: 8px;
         cursor: pointer;
 
         .category-icon img {
@@ -29,7 +25,7 @@
           height: 24px;
         }
 
-        & > .context {
+        .context {
           font-size: 14px;
           line-height: 1.14;
         }
@@ -40,7 +36,7 @@
         width: 601px;
         height: 50px;
 
-        & > input {
+        input {
           width: 100%;
           height: 100%;
           background-color: white;
