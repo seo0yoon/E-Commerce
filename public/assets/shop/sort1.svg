@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36">
+    <defs>
+        <style>
+            .cls-2{fill:#fff}
+        </style>
+    </defs>
+    <g id="그룹_50" transform="translate(-570 -531)">
+        <path id="Rectangle" fill="#262626" d="M0 0H36V36H0z" transform="translate(570 531)"/>
+        <path id="Path" d="M6.741 4.694V1.083A1.083 1.083 0 0 0 5.657 0H1.083A1.083 1.083 0 0 0 0 1.083v3.611a1.083 1.083 0 0 0 1.083 1.084h4.574a1.083 1.083 0 0 0 1.084-1.084z" class="cls-2" transform="translate(581.015 550.222)"/>
+        <path id="Path-2" d="M0 1.083v3.611a1.083 1.083 0 0 0 1.083 1.084h4.574a1.083 1.083 0 0 0 1.084-1.084V1.083A1.083 1.083 0 0 0 5.657 0H1.083A1.083 1.083 0 0 0 0 1.083z" class="cls-2" transform="translate(589.2 543)"/>
+        <path id="Path-3" d="M6.741 4.694V1.083A1.083 1.083 0 0 0 5.657 0H1.083A1.083 1.083 0 0 0 0 1.083v3.611a1.083 1.083 0 0 0 1.083 1.084h4.574a1.083 1.083 0 0 0 1.084-1.084z" class="cls-2" transform="translate(581.015 543)"/>
+        <path id="Path-4" d="M1.083 5.778h4.574a1.083 1.083 0 0 0 1.084-1.084V1.083A1.083 1.083 0 0 0 5.657 0H1.083A1.083 1.083 0 0 0 0 1.083v3.611a1.083 1.083 0 0 0 1.083 1.084z" class="cls-2" transform="translate(589.2 550.222)"/>
+    </g>
+</svg>

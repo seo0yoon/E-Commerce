@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14">
+    <defs>
+        <clipPath id="q1artjk75a">
+            <path fill="#410f0f" d="M0 0H14V14H0z" transform="translate(1072.5 694)"/>
+        </clipPath>
+    </defs>
+    <g clip-path="url(#q1artjk75a)" transform="translate(-1072.5 -694)">
+        <text fill="#767676" font-family="NanumGothic" font-size="16px" transform="translate(1074.5 706)">
+            <tspan x="0" y="0">+</tspan>
+        </text>
+    </g>
+</svg>

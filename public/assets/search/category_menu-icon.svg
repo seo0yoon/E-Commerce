@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+    <defs>
+        <style>
+            .cls-2{fill:#262626}
+        </style>
+    </defs>
+    <g id="그룹_14" transform="translate(2.5 2)">
+        <g id="Icon" transform="translate(.5 5)">
+            <path id="Path" d="M.653 2.939h16.98a.653.653 0 0 0 .653-.653V.653A.653.653 0 0 0 17.633 0H.653A.653.653 0 0 0 0 .653v1.633a.653.653 0 0 0 .653.653z" class="cls-2"/>
+            <path id="Path-2" d="M.5 2.939h13a.592.592 0 0 0 .5-.653V.653A.592.592 0 0 0 13.5 0H.5a.592.592 0 0 0-.5.653v1.633a.592.592 0 0 0 .5.653z" class="cls-2" transform="translate(0 6.531)"/>
+        </g>
+    </g>
+</svg>

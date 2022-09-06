@@ -1,0 +1,16 @@
+#root .socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 24px;
+  -webkit-column-gap: 12px;
+          column-gap: 12px;
+}
+
+#root .socials img {
+  cursor: pointer;
+}
+/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,39 @@
+// color
+ $black: #262626;
+ $white-1: #f5f5f3;
+ $grey-1: #6d6d6d;
+ $grey-2: #767676;
+ $grey-3: #c4c4c4;
+
+html,body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Nanum Gothic',
+    sans-serif;
+    color: black;
+    width: 100%;
+    min-height: 100vh !important;
+}
+
+#root {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 100vh !important;
+
+    .txt-bold {
+        font-weight: bold;
+    }
+
+}
+
+ul, li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: unset;
+    color: $grey-2;
+}

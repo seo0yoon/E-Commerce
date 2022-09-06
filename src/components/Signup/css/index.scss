@@ -1,0 +1,152 @@
+// color
+$black: #262626;
+$white-1: #f5f5f3;
+$grey-1: #6d6d6d;
+$grey-2: #767676;
+$grey-3: #c4c4c4;
+$grey-4: #f0f0f0;
+$black-1 : #2b2b2b;
+
+
+#root {
+    .sign-up {
+        display: flex;
+        justify-content: center;
+        padding-top: 128px;
+        padding-bottom: 140px;
+        box-sizing: border-box;
+
+        &>.wrapper {
+            max-width: 1600px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+
+            .top {
+                width: 100%;
+
+                &>.title {
+                    font-size: 40px;
+                }
+
+                .bread-crumbs {
+                    margin-top: 16px;
+                    font-size: 12px;
+                    color: $grey-1;
+                }
+
+                .subtitle {
+                    margin-top: 133px;
+                    width: 644px;
+                    height: 60px;
+                    line-height: 1.88;
+                    color: $grey-2;
+                }
+
+                .underline {
+                    margin-top: 57.5px;
+                    width: 100%;
+                    height: 1px;
+                    background-color: $grey-4;
+                }
+            }
+
+            .section {
+                margin-top: 60.5px;
+                display: grid;
+                grid-template-columns: repeat(1, auto);
+                row-gap: 61px;
+
+                .info-block {
+                    &>.title {
+                        font-size: 39px;
+                        line-height: 1.15;
+                    }
+
+                    .login-input {
+                        margin-top: 47px;
+                        display: grid;
+                        grid-template-columns: repeat(2, 507px);
+                        column-gap: 41px;
+                        row-gap: 27px;
+
+                        .input-form {
+
+                            .input-title {
+                                line-height: 1.44;
+                            }
+
+                            .input {
+                                // margin-top: 12px;
+                                width: 100%;
+                                height: 34px;
+                                border-style: none;
+                                border-bottom: solid 1px $grey-4;
+                            }
+                        }
+                    }
+                    .underline {
+                        margin-top: 70px;
+                        width: 100%;
+                        height: 1px;
+                        background-color: $grey-4;
+                    }
+                }
+            }
+            .submit-block {
+                margin-top: 67px;
+                .submit-policy {
+                    display: flex;
+
+                    .check-box {
+                        cursor: pointer;
+                        margin-right: 16px;
+                        height: 11px;
+                    }
+                    .policy-context {
+                        font-size: 14px;
+                        color: $grey-2;
+                        
+                    }
+                }
+                .select-subscribe {
+                    margin-top: 25px;
+                    height: 16px;
+                    display: flex;
+                    align-items: center;
+                    
+                    .select-desc {
+                        margin-right: 38px;
+                        font-size: 14px;
+                        color: $grey-2;
+                    }
+                    .check-block {
+                        margin-right: 42px;
+                        display: flex;
+
+                        .check-box {
+                            cursor: pointer;
+                            margin-right: 15px;
+                            height: 11px;
+                        }
+                        &>.context {
+                            font-size: 14px;
+                            color: $grey-2;
+                        }
+                    }
+                }
+                .login-btn {
+                    margin-top: 28px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 200px;
+                    height: 50px;
+                    background-color: black;
+                    font-size: 14px;
+                    color: white;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,117 @@
+#root .footer {
+  width: 100%;
+  background-color: #f5f5f3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#root .footer > .wrapper {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 1600px;
+  height: 374px;
+  padding-top: 60px;
+  padding-bottom: 55px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+#root .footer > .wrapper .left {
+  position: absolute;
+  left: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+#root .footer > .wrapper .left .menus {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (auto)[3];
+      grid-template-columns: repeat(3, auto);
+  -webkit-column-gap: 80px;
+          column-gap: 80px;
+}
+
+#root .footer > .wrapper .left .menus .contents .title {
+  font-size: 16px;
+}
+
+#root .footer > .wrapper .left .menus .footer-menus {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#root .footer > .wrapper .left .menus .footer-menus .menus {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[1];
+      grid-template-columns: repeat(1, 1fr);
+  row-gap: 10px;
+  margin-top: 20px;
+  margin-bottom: 68px;
+}
+
+#root .footer > .wrapper .contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+#root .footer > .wrapper .contacts .number,
+#root .footer > .wrapper .contacts .email {
+  line-height: 1.69;
+}
+
+#root .footer > .wrapper .contacts .address {
+  margin-top: 25px;
+  font-size: 14px;
+  line-height: 1.64;
+  color: #6d6d6d;
+}
+
+#root .footer > .wrapper .right {
+  position: absolute;
+  right: 0px;
+  height: calc(100% - 115px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,655 @@
+#root .home {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#root .home .banner {
+  width: 100%;
+  height: 597px;
+  background-color: #d8d8d8;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#root .home .banner > .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 1600px;
+  width: 100%;
+  height: 100%;
+}
+
+#root .home .banner > .wrapper .gauge {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 8px;
+          column-gap: 8px;
+}
+
+#root .home .banner > .wrapper .gauge .level {
+  font-size: 10px;
+  line-height: 1.1;
+}
+
+#root .home .banner > .wrapper .gauge > .main {
+  background-color: white;
+  width: 2px;
+  height: 120px;
+}
+
+#root .home .banner > .wrapper .gauge > .main > .black {
+  width: 2px;
+  height: 25%;
+  background-color: black;
+}
+
+#root .home .banner > .wrapper .sale {
+  margin-left: 110px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#root .home .banner > .wrapper .sale > .title {
+  font-size: 49px;
+  line-height: 1.14;
+}
+
+#root .home .banner > .wrapper .sale > .context {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  line-height: 1.19;
+  color: #6d6d6d;
+}
+
+#root .home .banner > .wrapper .sale > .context .percents {
+  font-size: 40px;
+  line-height: 1.15;
+  margin-left: 8px;
+  margin-right: 5px;
+  color: black;
+}
+
+#root .home .banner > .wrapper .sale .shop-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 185px;
+  height: 50px;
+  background-color: black;
+  font-size: 14px;
+  line-height: 1.14;
+  color: white;
+  cursor: pointer;
+}
+
+#root .home .refer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 80px;
+  border-bottom: solid 1px #f0f0f0;
+}
+
+#root .home .refer > .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  max-width: 1600px;
+  width: 100%;
+  height: 100%;
+}
+
+#root .home .refer > .wrapper > .block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 12px;
+          column-gap: 12px;
+}
+
+#root .home .refer > .wrapper > .block > .icon {
+  width: 24px;
+  height: 24px;
+}
+
+#root .home .refer > .wrapper > .block > .context {
+  line-height: 1.19;
+  color: #6d6d6d;
+}
+
+#root .home .refer > .wrapper > :first-child {
+  position: absolute;
+  left: 0px;
+}
+
+#root .home .refer > .wrapper > :nth-child(3) {
+  position: absolute;
+  right: 0px;
+}
+
+#root .home .sales {
+  width: 100%;
+  height: 920px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#root .home .sales .wrapper {
+  margin-top: 140px;
+  max-width: 1600px;
+  width: 100%;
+  height: 780px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  -webkit-column-gap: 40px;
+          column-gap: 40px;
+}
+
+#root .home .sales .wrapper .sale {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #c4c4c4;
+  padding-left: 50px;
+}
+
+#root .home .sales .wrapper .sale > .title {
+  font-size: 39px;
+  line-height: 1.15;
+  color: white;
+}
+
+#root .home .sales .wrapper .sale > .context {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 43px;
+  line-height: 1.19;
+  color: rgba(255, 255, 255, 0.71);
+}
+
+#root .home .sales .wrapper .sale > .context > .percents {
+  font-size: 40px;
+  line-height: 1.15;
+  color: white;
+  margin-left: 8px;
+  margin-right: 5px;
+}
+
+#root .home .sales .wrapper .sale .shop-btn {
+  margin-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 185px;
+  height: 50px;
+  background-color: white;
+  cursor: pointer;
+}
+
+#root .home .sales .wrapper .left .sale {
+  height: 100%;
+}
+
+#root .home .sales .wrapper .right {
+  height: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[1];
+      grid-template-columns: repeat(1, 1fr);
+  row-gap: 40px;
+}
+
+#root .home > .block {
+  margin-top: 131px;
+  width: 100%;
+  height: 570px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#root .home > .block .wrapper {
+  max-width: 1600px;
+  width: 100%;
+  height: 100%;
+}
+
+#root .home > .block .wrapper .context {
+  width: 100%;
+  height: 45px;
+  position: relative;
+}
+
+#root .home > .block .wrapper .context .title {
+  position: absolute;
+  left: 0px;
+  font-size: 39px;
+  line-height: 1.15;
+}
+
+#root .home > .block .wrapper .context .view-all {
+  position: absolute;
+  right: 0px;
+  font-weight: bold;
+  line-height: 1.88;
+  color: #69b2d3;
+  cursor: pointer;
+}
+
+#root .home > .block .wrapper > .items {
+  margin-top: 51px;
+  width: 100%;
+  height: 100%;
+}
+
+#root .home > .block .wrapper > .items .item {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  -webkit-column-gap: 40px;
+          column-gap: 40px;
+}
+
+#root .home > .block .wrapper > .items .item .contents .content {
+  position: relative;
+  padding-left: 20px;
+  padding-top: 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height: 370px;
+  background-color: #d8d8d8;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+#root .home > .block .wrapper > .items .item .contents .content .badge {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 92px;
+  height: 35px;
+  background-color: black;
+  font-size: 14px;
+  color: white;
+}
+
+#root .home > .block .wrapper > .items .item .contents .content .options {
+  width: 100%;
+  height: 156px;
+  background-color: white;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  -webkit-transition: bottom 0.3s ease;
+  transition: bottom 0.3s ease;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  padding: 26px 24px 27px 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+#root .home > .block .wrapper > .items .item .contents .content .options .lists {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  color: #767676;
+}
+
+#root .home > .block .wrapper > .items .item .contents .content .options .lists .wish-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 8px;
+          column-gap: 8px;
+  line-height: 1.19;
+  cursor: pointer;
+}
+
+#root .home > .block .wrapper > .items .item .contents .content .options .lists .compare {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 8px;
+          column-gap: 8px;
+  line-height: 1.19;
+  cursor: pointer;
+}
+
+#root .home > .block .wrapper > .items .item .contents .content .options .lists .add-cart {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 8px;
+          column-gap: 8px;
+  line-height: 1.19;
+  cursor: pointer;
+}
+
+#root .home > .block .wrapper > .items .item .contents .content .open-option {
+  bottom: 0px;
+}
+
+#root .home > .block .wrapper > .items .item .contents .content .close-option {
+  bottom: -156px;
+}
+
+#root .home > .block .wrapper > .items .item .contents > .context {
+  margin-top: 26px;
+  position: relative;
+}
+
+#root .home > .block .wrapper > .items .item .contents > .context .title {
+  position: absolute;
+  left: 0px;
+  font-size: 20px;
+  line-height: 1.15;
+}
+
+#root .home > .block .wrapper > .items .item .contents > .context .price {
+  position: absolute;
+  right: 0px;
+  line-height: 1.88;
+  color: #767676;
+}
+
+#root .home > .block .wrapper > .items .item .contents .detail {
+  margin-top: 22px;
+  color: #767676;
+}
+
+#root .home .to-phone {
+  margin-top: 135px;
+  width: 100%;
+  height: 370px;
+  background-color: #d8d8d8;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  white-space: nowrap;
+}
+
+#root .home .to-phone > .title {
+  font-size: 39px;
+  line-height: 1.15;
+  color: white;
+}
+
+#root .home .to-phone > .context {
+  margin-top: 46px;
+  line-height: 1.88;
+  color: white;
+}
+
+#root .home .to-phone > .btn {
+  margin-top: 45px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 185px;
+  height: 50px;
+  background-color: #ffffff;
+  font-size: 14px;
+  line-height: 1.14;
+  cursor: pointer;
+}
+
+#root .home .brands {
+  margin-top: 126px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 517px;
+  display: flex;
+}
+
+#root .home .brands > .wrapper {
+  max-width: 1600px;
+  width: 100%;
+  height: 100%;
+}
+
+#root .home .brands > .wrapper .title {
+  font-size: 39px;
+  line-height: 1.15;
+}
+
+#root .home .brands > .wrapper .context {
+  margin-top: 47px;
+  width: 643px;
+  height: 60px;
+  line-height: 1.88;
+  color: #767676;
+}
+
+#root .home .brands > .wrapper .contents {
+  width: 100%;
+  height: 320px;
+  margin-top: 45px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  -webkit-column-gap: 4px;
+          column-gap: 4px;
+}
+
+#root .home .brands > .wrapper .contents > .content {
+  background-color: #c4c4c4;
+  cursor: pointer;
+}
+
+#root .home .journal {
+  margin-top: 131px;
+  margin-bottom: 104px;
+  width: 100%;
+  height: 709px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#root .home .journal > .wrapper {
+  max-width: 1600px;
+  width: 100%;
+}
+
+#root .home .journal > .wrapper .context {
+  width: 100%;
+  height: 45px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+#root .home .journal > .wrapper .context .title {
+  position: absolute;
+  left: 0px;
+  font-size: 39px;
+  line-height: 1.15;
+}
+
+#root .home .journal > .wrapper .context .view-all {
+  position: absolute;
+  right: 0px;
+  line-height: 1.88;
+  color: #69b2d3;
+  cursor: pointer;
+}
+
+#root .home .journal > .wrapper .contents {
+  margin-top: 51px;
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  -webkit-column-gap: 35.2px;
+          column-gap: 35.2px;
+}
+
+#root .home .journal > .wrapper .contents .block {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#root .home .journal > .wrapper .contents .block .content {
+  width: 100%;
+  height: 401.6px;
+  background-color: #c4c4c4;
+  cursor: pointer;
+}
+
+#root .home .journal > .wrapper .contents .block .category {
+  margin-top: 25.4px;
+  font-size: 14px;
+}
+
+#root .home .journal > .wrapper .contents .block .title {
+  margin-top: 21px;
+  font-size: 25px;
+  line-height: 1.44;
+  color: black;
+}
+
+#root .home .journal > .wrapper .contents .block .context {
+  margin-top: 10px;
+  line-height: 1.88;
+  color: #767676;
+}
+/*# sourceMappingURL=index.css.map */

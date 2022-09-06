@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+    <defs>
+        <clipPath id="clip-path">
+            <path id="패스_7" d="M21.863-7.667H21.3v-3.787a1.682 1.682 0 0 0-.494-1.188l-3.5-3.5a1.682 1.682 0 0 0-1.188-.494h-1.543v-1.682A1.682 1.682 0 0 0 12.893-20H1.682A1.682 1.682 0 0 0 0-18.318v11.211a1.682 1.682 0 0 0 1.682 1.682h.561a3.364 3.364 0 0 0 3.363 3.364 3.364 3.364 0 0 0 3.363-3.364h4.485a3.364 3.364 0 0 0 3.364 3.364 3.364 3.364 0 0 0 3.364-3.364h1.682a.562.562 0 0 0 .561-.561v-1.121a.562.562 0 0 0-.562-.56zM5.606-3.743a1.682 1.682 0 0 1-1.682-1.682 1.682 1.682 0 0 1 1.682-1.682 1.682 1.682 0 0 1 1.682 1.682 1.682 1.682 0 0 1-1.682 1.682zm11.212 0a1.682 1.682 0 0 1-1.682-1.682 1.682 1.682 0 0 1 1.682-1.682A1.682 1.682 0 0 1 18.5-5.425a1.682 1.682 0 0 1-1.682 1.682zm2.8-7.288h-5.043v-3.924h1.545l3.5 3.5z" class="cls-1" transform="translate(0 20)"/>
+        </clipPath>
+        <clipPath id="clip-path-2">
+            <path id="패스_6" d="M-871 4840.739H851.117V-827H-871z" class="cls-1" transform="translate(871 827)"/>
+        </clipPath>
+        <style>
+            .cls-1{fill:none}
+        </style>
+    </defs>
+    <g id="그룹_39" transform="translate(0 2)">
+        <path id="사각형_9" fill="#fff" d="M0 0H24V24H0z" transform="translate(0 -2)"/>
+        <g id="truck-solid" transform="translate(1 21)">
+            <g id="그룹_6" clip-path="url(#clip-path)" transform="translate(0 -20)">
+                <g id="그룹_5" clip-path="url(#clip-path-2)" transform="translate(-781.231 -723.827)">
+                    <path id="패스_5" fill="#252525" d="M-5-25h31.393V1.908H-5z" transform="translate(781.747 744.343)"/>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
