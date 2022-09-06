@@ -1,0 +1,42 @@
+@import "../../style/variables.scss";
+
+#root {
+  .notfound {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 104px;
+    padding-bottom: 134px;
+
+    & > .wrapper {
+      width: 1600px;
+
+      .title {
+        font-size: 200px;
+        font-weight: bold;
+        line-height: 1.15;
+      }
+
+      .context {
+        width: 644px;
+        height: 60px;
+        line-height: 1.88;
+        color: $grey-2;
+      }
+
+      .back-btn {
+        margin-top: 163px;
+        margin-bottom: 134px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 200px;
+        height: 50px;
+        background-color: black;
+        font-size: 14px;
+        line-height: 1.14;
+        color: white;
+      }
+    }
+  }
+}

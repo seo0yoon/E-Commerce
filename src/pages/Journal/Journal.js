@@ -1,13 +1,13 @@
-import React from 'react';
-import JournalCard from './components/JournalCard';
-import JournalInput from './components/JournalInput';
-import RecentPosts from './components/RecentPosts';
-import './css/index.css';
-import { useSelector } from 'react-redux';
-import Archives from './components/Archives';
-import Categories from './components/Categories';
-import Metas from './components/Metas';
-import { Link } from 'react-router-dom';
+import React from "react";
+import JournalCard from "./components/JournalCard";
+import JournalInput from "./components/JournalInput";
+import RecentPosts from "./components/RecentPosts";
+import { useSelector } from "react-redux";
+import Archives from "./components/Archives";
+import Categories from "./components/Categories";
+import Metas from "./components/Metas";
+import { Link } from "react-router-dom";
+import "./Journal.scss";
 
 function Journal() {
   const articles = useSelector((state) => state.layouts.journal.articles);
@@ -30,12 +30,7 @@ function Journal() {
               {articles.map(({ categories, title, desc, path }, idx) => {
                 return (
                   <Link to={path}>
-                    <JournalCard
-                      key={idx}
-                      title={title}
-                      desc={desc}
-                      categories={categories}
-                    />
+                    <JournalCard key={idx} title={title} desc={desc} categories={categories} />
                   </Link>
                 );
               })}
@@ -48,13 +43,7 @@ function Journal() {
               <div className="title txt-bold">Recent Posts</div>
               <ul className="wrapper">
                 {recent_posts.map(({ front_txt, behind_txt }, idx) => {
-                  return (
-                    <RecentPosts
-                      key={idx}
-                      front_txt={front_txt}
-                      behind_txt={behind_txt}
-                    />
-                  );
+                  return <RecentPosts key={idx} front_txt={front_txt} behind_txt={behind_txt} />;
                 })}
               </ul>
             </div>

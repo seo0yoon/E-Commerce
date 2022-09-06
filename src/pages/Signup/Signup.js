@@ -1,5 +1,5 @@
-import React, { useState, useCallback } from 'react';
-import './css/index.css';
+import React, { useState, useCallback } from "react";
+import "./Signup.scss";
 
 function Signup() {
   const [check, setCheck] = useState(false);
@@ -19,9 +19,8 @@ function Signup() {
           <div className="title txt-bold">Sign up</div>
           <div className="bread-crumbs">Home &gt; Sign up</div>
           <div className="subtitle">
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text
-            ever since the.
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+            industry's standard dummy text ever since the.
           </div>
           <div className="underline"></div>
         </div>
@@ -39,19 +38,11 @@ function Signup() {
               </div>
               <div className="input-form">
                 <div className="input-title txt-bold">Email address</div>
-                <input
-                  className="input"
-                  type="email"
-                  placeholder="company@domain.com"
-                />
+                <input className="input" type="email" placeholder="company@domain.com" />
               </div>
               <div className="input-form">
                 <div className="input-title txt-bold">Telephone</div>
-                <input
-                  className="input"
-                  type="text"
-                  placeholder="Your phone number"
-                />
+                <input className="input" type="text" placeholder="Your phone number" />
               </div>
             </div>
             <div className="underline"></div>
@@ -61,11 +52,7 @@ function Signup() {
             <div className="login-input">
               <div className="input-form">
                 <div className="input-title txt-bold">Address 1</div>
-                <input
-                  className="input"
-                  type="text"
-                  placeholder="4279 Zboncak Port Suite 6212"
-                />
+                <input className="input" type="text" placeholder="4279 Zboncak Port Suite 6212" />
               </div>
               <div className="input-form">
                 <div className="input-title txt-bold">Address 2</div>
@@ -81,19 +68,11 @@ function Signup() {
               </div>
               <div className="input-form">
                 <div className="input-title txt-bold">Country</div>
-                <input
-                  className="input"
-                  type="text"
-                  placeholder="Please select"
-                />
+                <input className="input" type="text" placeholder="Please select" />
               </div>
               <div className="input-form">
                 <div className="input-title txt-bold">Region/State</div>
-                <input
-                  className="input"
-                  type="text"
-                  placeholder="Please select"
-                />
+                <input className="input" type="text" placeholder="Please select" />
               </div>
             </div>
 
@@ -104,19 +83,11 @@ function Signup() {
             <div className="login-input">
               <div className="input-form">
                 <div className="input-title txt-bold">Password</div>
-                <input
-                  className="input"
-                  type="password"
-                  placeholder="Password"
-                />
+                <input className="input" type="password" placeholder="Password" />
               </div>
               <div className="input-form">
                 <div className="input-title txt-bold">Repreat Password</div>
-                <input
-                  className="input"
-                  type="password"
-                  placeholder="Repreat password"
-                />
+                <input className="input" type="password" placeholder="Repreat password" />
               </div>
             </div>
             <div className="underline"></div>
@@ -127,9 +98,7 @@ function Signup() {
             <div className="check-box">
               <img src="/assets/signup/not-checked-box.svg" alt="check-box" />
             </div>
-            <div className="policy-context">
-              I have read and agree to the Privacy Policy
-            </div>
+            <div className="policy-context">I have read and agree to the Privacy Policy</div>
           </div>
           <div className="select-subscribe">
             <div className="select-desc">Subscribe Newsletter</div>

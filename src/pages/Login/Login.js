@@ -1,6 +1,6 @@
-import React from 'react';
-import './css/index.css';
-import { Link } from 'react-router-dom';
+import React from "react";
+import { Link } from "react-router-dom";
+import "./Login.scss";
 
 function Login() {
   return (
@@ -10,9 +10,8 @@ function Login() {
           <div className="title txt-bold">Login</div>
           <div className="bread-crumbs">Home &gt; Login</div>
           <div className="subtitle">
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text
-            ever since the.
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+            industry's standard dummy text ever since the.
           </div>
           <div className="underline"></div>
         </div>
@@ -21,11 +20,7 @@ function Login() {
           <div className="login-input">
             <div className="input-form">
               <div className="input-title txt-bold">Email address</div>
-              <input
-                className="input"
-                type="text"
-                placeholder="company@domain.com"
-              />
+              <input className="input" type="text" placeholder="company@domain.com" />
             </div>
             <div className="input-form">
               <div className="input-title txt-bold">Password</div>
@@ -38,9 +33,8 @@ function Login() {
         <div className="sign-up">
           <div className="title txt-bold">New Customer</div>
           <div className="desc">
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text
-            ever since the.
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+            industry's standard dummy text ever since the.
           </div>
           <Link to="/signup">
             <div className="sign-up-btn txt-bold">Continue</div>

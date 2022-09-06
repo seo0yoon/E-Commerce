@@ -1,5 +1,5 @@
-import React from 'react';
-import './css/index.css';
+import React from "react";
+import "./MyAccount.scss";
 
 function MyAccount() {
   return (
@@ -19,15 +19,13 @@ function MyAccount() {
             <li className="menu">Logout</li>
           </ul>
           <div className="desc">
-            <span className="style-gray">Hello</span> admin (
-            <span className="style-gray">not</span> admin? Log out)
+            <span className="style-gray">Hello</span> admin (<span className="style-gray">not</span> admin? Log out)
             <br></br>
             <br></br>
             <span className="style-gray">From your account dashboard you </span>
             can view your recent orders,
-            <span className="style-gray"> manage your </span>shipping and
-            billing addresses, <span className="style-gray">and</span> edit your
-            password and account details.
+            <span className="style-gray"> manage your </span>shipping and billing addresses,{" "}
+            <span className="style-gray">and</span> edit your password and account details.
           </div>
         </article>
       </div>

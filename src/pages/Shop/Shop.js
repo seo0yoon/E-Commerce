@@ -1,10 +1,10 @@
-import React from 'react';
-import PageMoving from './components/PageMoving';
-import ShopItems from './components/ShopItems';
-import Sort from './components/Sort';
-import Varietys from './components/Varietys';
-import './css/index.css';
-import { useSelector } from 'react-redux';
+import React from "react";
+import PageMoving from "./components/PageMoving";
+import ShopItems from "./components/ShopItems";
+import Sort from "./components/Sort";
+import Varietys from "./components/Varietys";
+import { useSelector } from "react-redux";
+import "./Shop.scss";
 
 function Shop() {
   const categorySet = useSelector((state) => state.layouts.shop.category);

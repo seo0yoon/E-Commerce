@@ -1,10 +1,10 @@
-import React, { useState, useCallback, useEffect } from 'react';
-import Description from './components/Description';
-import Reviews from './components/Reviews';
-import './css/index.css';
-import { useSelector, useDispatch } from 'react-redux';
-import { __UPDATE_PROD_DETAIL__ } from './actionTypes/layouts';
-import ColorChip from './components/ColorChip';
+import React, { useState, useCallback, useEffect } from "react";
+import Description from "./components/Description";
+import Reviews from "./components/Reviews";
+import { useSelector, useDispatch } from "react-redux";
+import { __UPDATE_PROD_DETAIL__ } from "./actionTypes/layouts";
+import ColorChip from "./components/ColorChip";
+import "./ShopInside.scss";
 
 function ShopInside() {
   const dispatch = useDispatch();
@@ -13,7 +13,7 @@ function ShopInside() {
   const [quantity, setQuantity] = useState(1);
   const [numReview, setNumReivew] = useState(1);
 
-  const [displayIdx, setDisplayIdx] = useState('desc');
+  const [displayIdx, setDisplayIdx] = useState("desc");
 
   const prod_data = useSelector((state) => state.layouts.productDetail);
 
@@ -36,42 +36,42 @@ function ShopInside() {
   }, []);
 
   useEffect(() => {
-    const prod_num = '1439284';
+    const prod_num = "1439284";
     // 로딩을 걸꺼임
     // 네트워크 통신을 통해서, prod_num를 주고 데이터를 받아올꺼임.
     // 로딩 해제
     const prod_data = {
       product: {
-        name: 'Product',
+        name: "Product",
         price: 88,
         colors: [
           {
             isActive: false,
-            value: '#c4c4c4',
+            value: "#c4c4c4",
           },
           {
             isActive: false,
-            value: '#ff8686',
+            value: "#ff8686",
           },
           {
             isActive: false,
-            value: '#7ed321',
+            value: "#7ed321",
           },
           {
             isActive: false,
-            value: '#b6b6b6',
+            value: "#b6b6b6",
           },
           {
             isActive: false,
-            value: '#15cba5',
+            value: "#15cba5",
           },
         ],
-        size: ['XS', 'S', 'M'],
+        size: ["XS", "S", "M"],
       },
       config: {
         discount: 50, //%,
-        options: ['colors', 'size'],
-        status: 'Sold Out',
+        options: ["colors", "size"],
+        status: "Sold Out",
       },
       features: {},
       details: {},
@@ -139,11 +139,7 @@ function ShopInside() {
                   <div className="input-icon">
                     <img src="/assets/shop/input-icon.svg" alt="input-icon" />
                   </div>
-                  <div
-                    className={`hidden-size ${isDisplayInput ? '' : 'hidden'}`}
-                  >
-                    M
-                  </div>
+                  <div className={`hidden-size ${isDisplayInput ? "" : "hidden"}`}>M</div>
                 </div>
               </div>
               <div className="select-quantity">
@@ -152,12 +148,7 @@ function ShopInside() {
                   <div className="minus-quantity" onClick={isMinus}>
                     <img src="/assets/shop/minus-icon.svg" alt="-" />
                   </div>
-                  <input
-                    type="text"
-                    value={quantity}
-                    className="current-quantity"
-                    readOnly
-                  />
+                  <input type="text" value={quantity} className="current-quantity" readOnly />
                   <div className="plus-quantity" onClick={isPlus}>
                     <img src="/assets/shop/plus-icon.svg" alt="+" />
                   </div>
@@ -190,30 +181,26 @@ function ShopInside() {
                 </div>
                 <div className="underline"></div>
                 <div className="detail-context">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                  dolore magna aliqua.
                 </div>
               </div>
               <div className="select-contents">
                 <div
-                  className={`description ${
-                    displayIdx === 'desc' ? 'selected' : 'non-selected'
-                  }`}
-                  onClick={() => setDisplayIdx('desc')}
+                  className={`description ${displayIdx === "desc" ? "selected" : "non-selected"}`}
+                  onClick={() => setDisplayIdx("desc")}
                 >
                   Description
                 </div>
                 <div
-                  className={`review ${
-                    displayIdx === 'reviews' ? 'selected' : 'non-selected'
-                  }`}
-                  onClick={() => setDisplayIdx('reviews')}
+                  className={`review ${displayIdx === "reviews" ? "selected" : "non-selected"}`}
+                  onClick={() => setDisplayIdx("reviews")}
                 >
                   Reviews ({numReview})
                 </div>
               </div>
-              {displayIdx === 'desc' && <Description />}
-              {displayIdx === 'reviews' && <Reviews />}
+              {displayIdx === "desc" && <Description />}
+              {displayIdx === "reviews" && <Reviews />}
             </div>
             <ul className="input-boxes">
               <li className="input-box">
