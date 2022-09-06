@@ -1,0 +1,99 @@
+@import "../../style/variables.scss";
+
+#root {
+  .about {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    & > .wrapper {
+      width: 1600px;
+      display: flex;
+      flex-direction: column;
+
+      .block {
+        margin-top: 128px;
+        display: flex;
+        flex-direction: column;
+
+        .title {
+          font-size: 49px;
+        }
+
+        .path {
+          margin-top: 16px;
+          font-size: 12px;
+          line-height: 1.17;
+          color: $grey-2;
+        }
+      }
+
+      .contents {
+        margin-top: 137px;
+        width: 100%;
+        height: 776px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 40px;
+
+        .content {
+          display: flex;
+          justify-content: center;
+          align-items: flex-end;
+          background-color: $grey-3;
+          padding-bottom: 62px;
+          box-sizing: border-box;
+
+          .btn {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 35%;
+            height: 76px;
+            background-color: black;
+            line-height: 1.19;
+            color: white;
+            cursor: pointer;
+          }
+        }
+      }
+
+      .intro {
+        margin-top: 129px;
+        width: 100%;
+        height: 104px;
+        font-size: 30px;
+        line-height: 1.33;
+        color: black;
+      }
+
+      .explains {
+        margin-top: 121px;
+        margin-bottom: 126px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        width: 100%;
+        column-gap: 41px;
+
+        .explain {
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+
+          .title {
+            font-size: 25px;
+            font-weight: bold;
+            line-height: 1.44;
+          }
+
+          .context {
+            margin-top: 19px;
+            height: 150px;
+            line-height: 1.88;
+            color: $grey-3;
+          }
+        }
+      }
+    }
+  }
+}

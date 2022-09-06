@@ -1,0 +1,56 @@
+@import "../../style/variables.scss";
+
+#root {
+  .header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+    & > .wrapper {
+      position: relative;
+      width: 1600px;
+      height: 80px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .logo {
+        position: absolute;
+        left: 0px;
+        width: 65px;
+        height: 15.2px;
+        cursor: pointer;
+      }
+
+      .menus {
+        display: grid;
+        grid-template-columns: repeat(5, auto);
+        column-gap: 41px;
+
+        .menu {
+          font-size: 14px;
+        }
+      }
+
+      .languages {
+        position: absolute;
+        right: 0px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 16px;
+
+        .language {
+          font-size: 14px;
+          font-weight: bold;
+          cursor: pointer;
+          color: $grey-2;
+        }
+
+        .clicked {
+          color: black;
+        }
+      }
+    }
+  }
+}
