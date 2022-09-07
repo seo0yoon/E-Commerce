@@ -1,11 +1,11 @@
 import React from "react";
-import JournalCard from "./components/JournalCard";
-import JournalInput from "./components/JournalInput";
-import RecentPosts from "./components/RecentPosts";
+import JournalCard from "./components/JournalCard/JournalCard";
+import JournalInput from "./components/JournalInput/JournalInput";
+import RecentPosts from "./components/RecentPosts/RecentPosts";
 import { useSelector } from "react-redux";
-import Archives from "./components/Archives";
-import Categories from "./components/Categories";
-import Metas from "./components/Metas";
+import Archives from "./components/Archives/Archives";
+import Categories from "./components/Categories/Categories";
+import Metas from "./components/Metas/Metas";
 import { Link } from "react-router-dom";
 import "./Journal.scss";
 

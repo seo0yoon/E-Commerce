@@ -63,7 +63,6 @@
               font-size: 25px;
               text-overflow: ellipsis;
               overflow: hidden;
-              display: -webkit-box;
             }
 
             .subtitle {
@@ -75,15 +74,13 @@
         }
 
         .more-btn {
+          @include flexCenter;
           margin-top: 24px;
           width: 200px;
           height: 50px;
           background-color: black;
           font-size: 14px;
           color: white;
-          display: flex;
-          justify-content: center;
-          align-items: center;
           cursor: pointer;
         }
       }
@@ -126,12 +123,10 @@
           column-gap: 20px;
 
           .tag-btn {
+            @include flexCenter;
             width: 92px;
             height: 35px;
             background-color: black;
-            display: flex;
-            justify-content: center;
-            align-items: center;
             color: white;
             cursor: pointer;
           }
@@ -146,9 +141,9 @@
           }
 
           .subtitle {
-            margin-top: 48px;
             display: flex;
             justify-content: space-between;
+            margin-top: 48px;
 
             .person-name {
               line-height: 1.19;
@@ -188,10 +183,10 @@
           }
 
           .input-boxes {
-            margin-top: 21px;
             display: grid;
             grid-template-columns: repeat(1, auto);
             row-gap: 26px;
+            margin-top: 21px;
 
             .input-box {
               display: flex;
@@ -201,7 +196,7 @@
                 line-height: 1.44;
               }
 
-              & > input {
+              input {
                 margin-top: 13px;
                 height: 30px;
                 width: 60%;
@@ -218,9 +213,8 @@
           }
 
           .save-check {
+            @include flexCenterTwo;
             margin-top: 29px;
-            display: flex;
-            align-items: center;
             column-gap: 12px;
 
             .check-box {
@@ -237,10 +231,8 @@
           }
 
           .submit-btn {
+            @include flexCenter;
             margin-top: 24px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
             width: 200px;
             height: 50px;
             background-color: black;
@@ -251,24 +243,23 @@
       }
 
       .router {
-        margin-top: 137px;
         max-width: 507px;
         width: 100%;
+        margin-top: 137px;
 
         .journal-input {
+          @include flexCenterTwo;
           position: relative;
           height: 33px;
-          display: flex;
-          align-items: center;
 
-          & > input {
+          input {
             width: 100%;
             height: 100%;
             border-style: none;
             border-bottom: solid 1px #f0f0f0;
           }
 
-          & > input::placeholder {
+          input::placeholder {
             font-size: 14px;
             color: $grey-2;
           }
@@ -296,7 +287,7 @@
             width: 100%;
 
             .recent-post {
-              & > div {
+              div {
                 width: 100%;
                 row-gap: 16px;
                 height: 43px;
@@ -306,7 +297,7 @@
                 font-size: 15px;
                 line-height: 1.87;
 
-                & > span {
+                span {
                   color: $grey-2;
                 }
               }
@@ -328,7 +319,7 @@
             height: 44px;
             border-bottom: solid 1px #f0f0f0;
 
-            & > li {
+            li {
               list-style-position: inside;
               list-style-type: disc;
               line-height: 1.88;
@@ -354,7 +345,6 @@
 
             .category {
               width: 100%;
-              width: 100%;
               height: 41.5px;
               line-height: 1.88;
               border-bottom: solid 1px #f0f0f0;
@@ -366,8 +356,8 @@
         }
 
         .metas {
-          margin-top: 101.5px;
           width: 100%;
+          margin-top: 101.5px;
 
           .title {
             font-size: 20px;
@@ -407,9 +397,7 @@
             column-gap: 20.5px;
 
             .tag-btn {
-              display: flex;
-              justify-content: center;
-              align-items: center;
+              @include flexCenter;
               width: 92px;
               height: 35px;
               background-color: black;
