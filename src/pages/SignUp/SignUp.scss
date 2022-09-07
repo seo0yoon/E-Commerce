@@ -7,8 +7,7 @@
 
   .wrapper {
     @include maxWidth;
-    display: flex;
-    flex-direction: column;
+    @include flexColumn;
 
     .top {
       width: 100%;

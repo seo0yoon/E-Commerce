@@ -55,10 +55,9 @@
     }
 
     .right {
+      @include flexColumn;
       position: absolute;
       right: 0px;
-      display: flex;
-      flex-direction: column;
       justify-content: space-between;
       height: calc(100% - 114px);
     }

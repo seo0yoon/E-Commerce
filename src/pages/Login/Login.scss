@@ -4,12 +4,10 @@
   @include justifyCenterTwo;
   padding-top: 128px;
   padding-bottom: 140px;
-  box-sizing: border-box;
 
   .wrapper {
     @include maxWidth;
-    display: flex;
-    flex-direction: column;
+    @include flexColumn;
 
     .top {
       width: 100%;
@@ -84,8 +82,7 @@
       }
     }
     .sign-up {
-      display: flex;
-      flex-direction: column;
+      @include flexColumn;
       margin-top: 62px;
       .title {
         font-size: 39px;
