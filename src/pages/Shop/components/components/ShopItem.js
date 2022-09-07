@@ -36,19 +36,19 @@ function ShopItem({ contents: { title, color, type, price, percent, path } }) {
               <li className="wish-list">
                 <div className="context">Add to Wish List</div>
                 <div className="icon">
-                  <img src="/assets/shop/hearticon.svg" alt="heart-icon" />
+                  <img src="/images/shop/hearticon.png" alt="heart-icon" />
                 </div>
               </li>
               <li className="compare">
                 <div className="context">Compare</div>
                 <div className="icon">
-                  <img src="/assets/shop/compareicon.svg" alt="compare-icon" />
+                  <img src="/images/shop/compareicon.png" alt="compare-icon" />
                 </div>
               </li>
               <li className="add-cart">
                 <div className="context">Add to Cart</div>
                 <div className="icon">
-                  <img src="/assets/shop/carticon.svg" alt="cart-icon" />
+                  <img src="/images/shop/carticon.png" alt="cart-icon" />
                 </div>
               </li>
             </ul>

@@ -28,7 +28,7 @@ const PageMoving = () => {
           );
         })}
         <div className="more">
-          <img src="/assets/shop/moreicon.svg" alt="..." />
+          <img src="/images/shop/moreicon.png" alt="..." />
         </div>
         <div className="moving-page">10</div>
       </ul>

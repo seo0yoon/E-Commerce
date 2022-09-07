@@ -40,11 +40,11 @@ const CartList = () => {
         <div className="product-price txt-bold">$44.00</div>
         <div className="product-quantity">
           <div className="minus-quantity" onClick={isMinus}>
-            <img src="/assets/cart/minusicon.svg" alt="-" />
+            <img src="/images/cart/minusicon.png" alt="-" />
           </div>
           <input type="text" value={quantity} className="currentquantity" readOnly />
           <div className="plus-quantity" onClick={isPlus}>
-            <img src="/assets/cart/plusicon.svg" alt="+" />
+            <img src="/images/cart/plusicon.png" alt="+" />
           </div>
         </div>
         <div className="product-total txt-bold">$44.00</div>
@@ -56,7 +56,7 @@ const CartList = () => {
               회원가입 축하 10% 쿠폰
             </div>
             <div className="select-icon">
-              <img src="/assets/cart/selecticon.svg" alt="select-icon" />
+              <img src="/images/cart/selecticon.png" alt="select-icon" />
             </div>
             <div className="hidden-coupons" style={`${showList}` ? { opacity: 0 } : { opacity: 1 }}>
               <div className="hidden-coupon">회원가입 축하 10% 쿠폰</div>

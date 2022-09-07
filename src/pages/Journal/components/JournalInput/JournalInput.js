@@ -5,7 +5,7 @@ const JournalInput = () => {
     <div className="journal-input">
       <input className="txt-bold" type="text" placeholder="Type here to search..." />
       <div className="search-icon">
-        <img src="/assets/journal/searchicon.svg" alt="search-icon" />
+        <img src="/images/journal/searchicon.png" alt="search-icon" />
       </div>
     </div>
   );

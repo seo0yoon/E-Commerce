@@ -4,7 +4,7 @@ const Category = () => {
   return (
     <div className="category">
       <div className="category-icon">
-        <img src="/assets/search/categorymenuicon.svg" alt="카테고리로 이동" />
+        <img src="/images/search/categorymenuicon.png" alt="카테고리로 이동" />
       </div>
       <div className="context">Shop by Category</div>
     </div>
