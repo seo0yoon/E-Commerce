@@ -5,10 +5,10 @@ import { useSelector } from "react-redux";
 import "./Header.scss";
 
 const Header = () => {
-  const menuSet = useSelector((state) => state.layouts.menus);
+  const menuSet = useSelector((state) => state.layouts.menus); //전역변수 사용
 
-  const [isEnClicked, setIsEnClicked] = useState(true);
-  const [isRuClicked, setIsRuClicked] = useState(false);
+  const [isEnClicked, setIsEnClicked] = useState(true); //보이게
+  const [isRuClicked, setIsRuClicked] = useState(false); //안보이게
 
   const selectEn = useCallback(() => {
     setIsEnClicked(true);

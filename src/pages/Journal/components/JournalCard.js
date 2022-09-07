@@ -1,6 +1,6 @@
-import React from 'react';
+import React from "react";
 
-function JournalCard({ categories, title, desc }) {
+const JournalCard = ({ categories, title, desc }) => {
   return (
     <article className="card">
       <div className="card-img"></div>
@@ -11,6 +11,6 @@ function JournalCard({ categories, title, desc }) {
       </div>
     </article>
   );
-}
+};
 
 export default JournalCard;

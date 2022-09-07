@@ -1,7 +1,7 @@
-import React from 'react';
+import React from "react";
 
-function Categories({ context }) {
+const Categories = ({ context }) => {
   return <li className="category">{context}</li>;
-}
+};
 
 export default Categories;

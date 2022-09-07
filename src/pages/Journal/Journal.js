@@ -15,7 +15,6 @@ function Journal() {
   const archives = useSelector((state) => state.layouts.journal.archives);
   const categories = useSelector((state) => state.layouts.journal.categories);
   const metas = useSelector((state) => state.layouts.journal.metas);
-  // const articles = useSelector((state) => state.layouts.journal.articles);
 
   return (
     <section className="journal">

@@ -23,6 +23,9 @@ function App() {
       <Search />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/shop" element={<Shop />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/contacts" element={<Contacts />} />
         <Route path="/journal" element={<Journal />} />
       </Routes>
       <Footer />

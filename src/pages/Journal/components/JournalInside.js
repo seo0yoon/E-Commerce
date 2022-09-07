@@ -7,7 +7,7 @@ import Categories from "./Categories";
 import Metas from "./Metas";
 import "../Journal.scss";
 
-function JournalInside() {
+const JournalInside = () => {
   // const articles = useSelector((state) => state.layouts.journal.articles);
   const recent_posts = useSelector((state) => state.layouts.journal.recent);
   const archives = useSelector((state) => state.layouts.journal.archives);
@@ -138,6 +138,6 @@ function JournalInside() {
       </div>
     </section>
   );
-}
+};
 
 export default JournalInside;

@@ -1,11 +1,11 @@
-import React from 'react';
+import React from "react";
 
-function Archives({ context }) {
+const Archives = ({ context }) => {
   return (
     <ul className="archive">
       <li className="txt-bold">{context}</li>
     </ul>
   );
-}
+};
 
 export default Archives;
