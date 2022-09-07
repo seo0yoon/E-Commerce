@@ -17,7 +17,7 @@ const Sort = () => {
           <div className="selection-box big-size">
             <div className="kinds">Featured</div>
             <div className="icon">
-              <img src={process.env.PUBLIC_URL + "/assets/shop/selection-icon.svg"} alt="종류 보기" />
+              <img src={process.env.PUBLIC_URL + "/assets/shop/selectionicon.svg"} alt="종류 보기" />
             </div>
           </div>
         </div>
@@ -26,7 +26,7 @@ const Sort = () => {
           <div className="selection-box small-size">
             <div className="kinds txt-bold">36</div>
             <div className="icon">
-              <img src={process.env.PUBLIC_URL + "/assets/shop/selection-icon.svg"} alt="종류 보기" />
+              <img src={process.env.PUBLIC_URL + "/assets/shop/selectionicon.svg"} alt="종류 보기" />
             </div>
           </div>
         </div>

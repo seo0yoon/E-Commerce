@@ -5,7 +5,7 @@ const SearchInput = () => {
     <div className="search-input">
       <input type="text" placeholder="Search Products" />
       <div className="search-icon">
-        <img src={process.env.PUBLIC_URL + "/assets/Search/input_search-icon.svg"} alt="검색하기" />
+        <img src={process.env.PUBLIC_URL + "/assets/Search/inputsearchicon.svg"} alt="검색하기" />
       </div>
     </div>
   );
