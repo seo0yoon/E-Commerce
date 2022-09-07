@@ -1,8 +1,6 @@
-# 🎁E-commerce 
+# 🎁E-commerce
 
-
-🔗[MUZIMAKZI](http://muzimakji.s3-website.ap-northeast-2.amazonaws.com/) <br/>
-
+🔗[E-commerce](http://muzimakji.s3-website.ap-northeast-2.amazonaws.com/) <br/>
 
 ## 사용한 기술
 
@@ -11,5 +9,3 @@
 - AWS
 
 ## 내가 구현한 페이지
-
-
