@@ -223,22 +223,27 @@ const initialState = {
     ],
     menus: [
       {
+        id: 1,
         title: "Home",
         path: "/",
       },
       {
+        id: 2,
         title: "Shop",
         path: "/shop",
       },
       {
+        id: 3,
         title: "About",
         path: "/about",
       },
       {
+        id: 4,
         title: "Contacts",
         path: "/contacts",
       },
       {
+        id: 5,
         title: "Journal",
         path: "/journal",
       },
@@ -520,48 +525,56 @@ const initialState = {
   journal: {
     articles: [
       {
+        id: 1,
         path: "/Journal/1",
         categories: "Category",
         title: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
         desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       },
       {
+        id: 2,
         path: "/Journal/2",
         categories: "Category",
         title: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
         desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       },
       {
+        id: 3,
         path: "/Journal/3",
         categories: "Category",
         title: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
         desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       },
       {
+        id: 4,
         path: "/Journal/4",
         categories: "Category",
         title: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
         desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       },
       {
+        id: 5,
         path: "/Journal/5",
         categories: "Category",
         title: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
         desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       },
       {
+        id: 6,
         path: "/Journal/6",
         categories: "Category",
         title: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
         desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       },
       {
+        id: 7,
         path: "/Journal/7",
         categories: "Category",
         title: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
         desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       },
       {
+        id: 8,
         path: "/Journal/8",
         categories: "Category",
         title: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
@@ -571,22 +584,27 @@ const initialState = {
 
     recent: [
       {
+        id: 1,
         front_txt: "Lorem Ipsum is simply",
         behind_txt: "dummy text of the printing and typesetting.",
       },
       {
+        id: 2,
         front_txt: "Lorem Ipsum is simply",
         behind_txt: "dummy text of the printing and typesetting.",
       },
       {
+        id: 3,
         front_txt: "Lorem Ipsum is simply",
         behind_txt: "dummy text of the printing and typesetting.",
       },
       {
+        id: 4,
         front_txt: "Lorem Ipsum is simply",
         behind_txt: "dummy text of the printing and typesetting.",
       },
       {
+        id: 5,
         front_txt: "Lorem Ipsum is simply",
         behind_txt: "dummy text of the printing and typesetting.",
       },
@@ -594,35 +612,44 @@ const initialState = {
 
     archives: [
       {
+        id: 1,
         context: "May 2019",
       },
     ],
 
     categories: [
       {
+        id: 1,
         context: "Category 1",
       },
       {
+        id: 2,
         context: "Category 2",
       },
       {
+        id: 3,
         context: "Category 3",
       },
       {
+        id: 4,
         context: "Category 4",
       },
       {
+        id: 5,
         context: "Category 5",
       },
     ],
     metas: [
       {
+        id: 1,
         context: "Log in",
       },
       {
+        id: 2,
         context: "Entries RSS",
       },
       {
+        id: 3,
         context: "Comments RSS",
       },
     ],

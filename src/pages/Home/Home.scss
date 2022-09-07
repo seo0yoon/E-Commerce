@@ -366,6 +366,8 @@
   //journal 영역 시작
   .journal {
     .wrapper {
+      padding: 131px 0 104px;
+
       .context {
         @include flexBetween;
 
