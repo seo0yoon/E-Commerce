@@ -2,18 +2,15 @@
 
 #root {
   .journal {
-    display: flex;
-    justify-content: center;
-    padding-top: 128px;
+    @include justifyCenterTwo;
+    padding-top: 131px;
     padding-bottom: 140px;
     box-sizing: border-box;
 
-    & > .wrapper {
-      max-width: 1600px;
-      width: 100%;
+    .wrapper {
+      @include maxWidth;
       display: flex;
       flex-direction: column;
-      justify-content: space-between;
 
       .top {
         .title {
@@ -30,7 +27,7 @@
       .main {
         width: 100%;
         display: flex;
-        column-gap: 42px;
+        gap: 42px;
 
         .contents {
           max-width: 1056px;

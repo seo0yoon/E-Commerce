@@ -1,82 +1,66 @@
 @import "../../style/variables.scss";
 
-#root {
-  .footer {
-    width: 100%;
-    background-color: $white-1;
-    display: flex;
-    justify-content: center;
+.footer {
+  @include justifyCenterTwo;
+  width: 100%;
+  background-color: $white-1;
+  //absolute를 사용해서 높이값을 지울 수 없음
+  .wrapper {
+    @include justifyCenterTwo;
+    position: relative;
+    width: 1600px;
+    height: 374px;
+    padding: 59px 0 55px;
 
-    & > .wrapper {
-      position: relative;
+    .left {
+      @include justifyCenterTwo;
+      position: absolute;
+      left: 0px;
+      flex-direction: column;
+
+      .menus {
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        gap: 80px;
+
+        .contents {
+          .title {
+            font-size: 16px;
+          }
+        }
+
+        .footer-menus {
+          .menus {
+            display: grid;
+            grid-template-columns: repeat(1, auto);
+            gap: 10px;
+            margin: 20px 0 68px;
+          }
+        }
+      }
+    }
+
+    .contacts {
+      .number,
+      .email {
+        line-height: 1.69;
+      }
+
+      .address {
+        margin-top: 25px;
+        font-size: 14px;
+        line-height: 1.64;
+        color: $grey-1;
+      }
+    }
+
+    .right {
+      position: absolute;
+      right: 0px;
       display: flex;
-      justify-content: center;
-      width: 1600px;
-      height: 374px;
-      padding-top: 60px;
-      padding-bottom: 55px;
-      box-sizing: border-box;
-
-      .left {
-        position: absolute;
-        left: 0px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        box-sizing: border-box;
-
-        .menus {
-          display: grid;
-          grid-template-columns: repeat(3, auto);
-          column-gap: 80px;
-
-          .contents {
-            .title {
-              font-size: 16px;
-            }
-          }
-
-          .footer-menus {
-            display: flex;
-            flex-direction: column;
-
-            .menus {
-              display: grid;
-              grid-template-columns: repeat(1, 1fr);
-              row-gap: 10px;
-              margin-top: 20px;
-              margin-bottom: 68px;
-            }
-          }
-        }
-      }
-
-      .contacts {
-        display: flex;
-        flex-direction: column;
-        box-sizing: border-box;
-
-        .number,
-        .email {
-          line-height: 1.69;
-        }
-
-        .address {
-          margin-top: 25px;
-          font-size: 14px;
-          line-height: 1.64;
-          color: $grey-1;
-        }
-      }
-
-      .right {
-        position: absolute;
-        right: 0px;
-        height: calc(100% - 115px);
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-      }
+      flex-direction: column;
+      justify-content: space-between;
+      height: calc(100% - 114px);
     }
   }
 }

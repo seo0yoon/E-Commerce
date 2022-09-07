@@ -57,17 +57,22 @@
         }
       }
 
-      .mypage {
+      .my-page {
         display: flex;
         position: absolute;
         right: 0px;
         gap: 16px;
 
-        .mymenus {
+        .my-menus {
           display: flex;
           cursor: pointer;
+
+          .my-settings {
+            background-color: $white-1;
+          }
         }
-        .myshop {
+
+        .my-shop {
           cursor: pointer;
         }
       }

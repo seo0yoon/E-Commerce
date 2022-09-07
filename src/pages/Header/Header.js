@@ -4,7 +4,7 @@ import Navigation from "./components/Navigation/Navigation";
 import { useSelector } from "react-redux";
 import "./Header.scss";
 
-function Header() {
+const Header = () => {
   const menuSet = useSelector((state) => state.layouts.menus);
 
   const [isEnClicked, setIsEnClicked] = useState(true);
@@ -44,6 +44,6 @@ function Header() {
       </div>
     </header>
   );
-}
+};
 
 export default Header;

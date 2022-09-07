@@ -1,7 +1,7 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React from "react";
+import { Link } from "react-router-dom";
 
-function Logo({ menus }) {
+const Logo = ({ menus }) => {
   return (
     <div className="logo">
       <Link to={menus[0].path}>
@@ -9,6 +9,6 @@ function Logo({ menus }) {
       </Link>
     </div>
   );
-}
+};
 
 export default Logo;

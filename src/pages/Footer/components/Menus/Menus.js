@@ -1,7 +1,7 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React from "react";
+import { Link } from "react-router-dom";
 
-function Menus({ menus }) {
+const Menus = ({ menus }) => {
   return (
     <div className="footer-menus">
       <ul className="menus">
@@ -15,6 +15,6 @@ function Menus({ menus }) {
       </ul>
     </div>
   );
-}
+};
 
 export default Menus;

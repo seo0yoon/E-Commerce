@@ -1,7 +1,7 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React from "react";
+import { Link } from "react-router-dom";
 
-function Navigation({ menus }) {
+const Navigation = ({ menus }) => {
   return (
     <ul className="menus">
       {menus.map((menus, idx) => {
@@ -13,6 +13,6 @@ function Navigation({ menus }) {
       })}
     </ul>
   );
-}
+};
 
 export default Navigation;

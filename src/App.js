@@ -23,6 +23,7 @@ function App() {
       <Search />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/journal" element={<Journal />} />
       </Routes>
       <Footer />
     </BrowserRouter>
