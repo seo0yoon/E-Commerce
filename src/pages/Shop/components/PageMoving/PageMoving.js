@@ -28,7 +28,7 @@ const PageMoving = () => {
           );
         })}
         <div className="more">
-          <img src={`${process.env.PUBLIC_URL}/assets/shop/more-icon.svg`} alt="..." />
+          <img src={process.env.PUBLIC_URL + "/assets/shop/more-icon.svg"} alt="..." />
         </div>
         <div className="moving-page">10</div>
       </ul>
