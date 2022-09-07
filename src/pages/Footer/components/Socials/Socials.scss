@@ -1,0 +1,10 @@
+.socials {
+  display: flex;
+  align-items: center;
+  height: 24px;
+  column-gap: 12px;
+
+  img {
+    cursor: pointer;
+  }
+}
