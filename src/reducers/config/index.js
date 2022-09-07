@@ -1,14 +1,10 @@
-const initialState = {
-    
-}
+const initialState = {};
 
-const config = (state = initialState, {type,payload}) => {
-    switch (type) {
+const config = (state = initialState, { type, payload }) => {
+  switch (type) {
+    default:
+      return state;
+  }
+};
 
-    
-        default:
-            return state
-    }
-}
-
-export default config
+export default config;
