@@ -273,7 +273,7 @@ const initialState = {
       contents: [
         {
           context: "Category1",
-          btn: `${process.env.PUBLIC_URL}/assets/shop/plusicon.svg`,
+          btn: "/assets/shop/plusicon.svg",
           alt: "plus-icon",
           color_display: "none",
         },
@@ -285,7 +285,7 @@ const initialState = {
         },
         {
           context: "Category3",
-          btn: `${process.env.PUBLIC_URL}/assets/shop/plusicon.svg`,
+          btn: "/assets/shop/plusicon.svg",
           alt: "plus-icon",
           color_display: "none",
         },
@@ -305,13 +305,13 @@ const initialState = {
     },
     color: {
       title: "Shop by Color",
-      icon: `${process.env.PUBLIC_URL}/assets/shop/dropupicon.svg`,
+      icon: "/assets/shop/dropupicon.svg",
       alt: "dropup-icon",
 
       contents: [
         {
           context: "Color1",
-          btn: `${process.env.PUBLIC_URL}/assets/shop/plusicon.svg`,
+          btn: "/assets/shop/plusicon.svg",
           alt: "plus-icon",
           color_display: "block",
           color: "#000000",
@@ -325,7 +325,7 @@ const initialState = {
         },
         {
           context: "Color3",
-          btn: `${process.env.PUBLIC_URL}/assets/shop/plusicon.svg`,
+          btn: "/assets/shop/plusicon.svg",
           alt: "plus-icon",
           color_display: "block",
           color: "#7ed321",
@@ -348,7 +348,7 @@ const initialState = {
     },
     brand: {
       title: "Shop by Brand",
-      icon: `${process.env.PUBLIC_URL}/assets/shop/dropupicon.svg`,
+      icon: "/assets/shop/dropupicon.svg",
       alt: "dropup-icon",
 
       contents: [

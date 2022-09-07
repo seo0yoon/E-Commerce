@@ -28,19 +28,19 @@ const Home = () => {
         <div className="wrapper">
           <div className="block">
             <div className="icon">
-              <img src={process.env.PUBLIC_URL + "/assets/Home/warrantyicon.svg"} alt="2" />
+              <img src="/assets/Home/warrantyicon.svg" alt="2" />
             </div>
             <div className="context">Two years warranty</div>
           </div>
           <div className="block">
             <div className="icon">
-              <img src={process.env.PUBLIC_URL + "/assets/Home/shippingicon.svg"} alt="배송비 무료" />
+              <img src="/assets/Home/shippingicon.svg" alt="배송비 무료" />
             </div>
             <div className="context">Free shipping</div>
           </div>
           <div className="block">
             <div className="icon">
-              <img src={process.env.PUBLIC_URL + "/assets/Home/returnicon.svg"} alt="30일 반품" />
+              <img src="/assets/Home/returnicon.svg" alt="30일 반품" />
             </div>
             <div className="context">Return policy in 30 days</div>
           </div>

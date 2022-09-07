@@ -28,19 +28,19 @@ const Item = ({ item: { title, price, detail, event, percent } }) => {
             <li className="list wish">
               <div className="context">Add to Wish List</div>
               <div className="icon">
-                <img src={process.env.PUBLIC_URL + "/assets/shop/hearticon.svg"} alt="heart-icon" />
+                <img src="/assets/shop/hearticon.svg" alt="heart-icon" />
               </div>
             </li>
             <li className="list compare">
               <div className="context">Compare</div>
               <div className="icon">
-                <img src={process.env.PUBLIC_URL + "/assets/shop/compareicon.svg"} alt="compare-icon" />
+                <img src="/assets/shop/compareicon.svg" alt="compare-icon" />
               </div>
             </li>
             <li className="list add-cart">
               <div className="context">Add to Cart</div>
               <div className="icon">
-                <img src={process.env.PUBLIC_URL + "/assets/shop/carticon.svg"} alt="cart-icon" />
+                <img src="/assets/shop/carticon.svg" alt="cart-icon" />
               </div>
             </li>
           </ul>
