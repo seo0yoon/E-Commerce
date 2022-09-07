@@ -1,0 +1,317 @@
+@import "../../style/variables.scss";
+
+#root {
+  .shop {
+    @include flexCenterTwo;
+    width: 100%;
+    flex-direction: column;
+
+    .wrapper {
+      @include maxWidth;
+
+      .title {
+        margin-top: 128px;
+
+        .context {
+          font-size: 49px;
+        }
+
+        .path {
+          margin-top: 16px;
+          font-size: 12px;
+          line-height: 1.17;
+          color: $grey-2;
+        }
+      }
+
+      .main {
+        display: flex;
+        width: 100%;
+        gap: 38.4px;
+        margin-top: 133px;
+
+        .aside {
+          @include flexColumn;
+          width: 369.6px;
+
+          .block {
+            @include flexColumn;
+            row-gap: 56px;
+            .varietys {
+              @include flexColumn;
+              width: 100%;
+
+              .title {
+                @include flexCenterTwo;
+                position: relative;
+                height: 23px;
+                margin-bottom: 15px;
+
+                .context {
+                  position: absolute;
+                  left: 0px;
+                  font-size: 20px;
+                  line-height: 1.15;
+                }
+                .icon {
+                  position: absolute;
+                  right: 0px;
+                }
+              }
+
+              .item {
+                @include flexCenterTwo;
+                position: relative;
+                width: 100%;
+                height: 45px;
+                margin-top: 27px;
+                padding-bottom: 25px;
+                border-bottom: solid 1px #f0f0f0;
+                cursor: pointer;
+
+                .content {
+                  @include flexCenterTwo;
+                  position: absolute;
+                  left: 0px;
+                  .color {
+                    width: 11px;
+                    height: 11px;
+                    margin-right: 10px;
+                    border-radius: 50%;
+                  }
+
+                  .context {
+                    line-height: 1.88;
+                    color: $grey-2;
+                  }
+                }
+
+                .plus-icon {
+                  position: absolute;
+                  right: 0px;
+
+                  img {
+                    width: 16px;
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        .section {
+          width: calc(100% - 408px);
+
+          .sort {
+            position: relative;
+            width: 100%;
+            height: 36px;
+
+            .sort-style {
+              position: absolute;
+              left: 0px;
+              display: flex;
+              column-gap: 20px;
+
+              div {
+                width: 36px;
+                height: 36px;
+                cursor: pointer;
+              }
+            }
+
+            .selection {
+              @include flexCenterTwo;
+              position: absolute;
+              right: 0px;
+              column-gap: 40px;
+              line-height: 1.88;
+              color: $grey-2;
+
+              .sort-by {
+                @include flexCenter;
+                column-gap: 15px;
+
+                .selection-box {
+                  @include flexCenterTwo;
+                  position: relative;
+                  width: 239px;
+                  height: 36px;
+                  border: solid 1px #f0f0f0;
+                  cursor: pointer;
+
+                  .kinds {
+                    position: absolute;
+                    left: 21px;
+                  }
+
+                  .icon {
+                    position: absolute;
+                    right: 18px;
+                  }
+                }
+
+                .big-size {
+                  width: 239px;
+                  height: 36px;
+                }
+
+                .small-size {
+                  width: 139px;
+                  height: 36px;
+                }
+              }
+            }
+          }
+
+          // start
+          .items {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            column-gap: 40px;
+            row-gap: 55px;
+            width: 100%;
+            margin-top: 60px;
+
+            .item {
+              width: 100%;
+
+              .img-box {
+                position: relative;
+                height: 370px;
+                padding: 20px 0 0 20px;
+                background-color: $grey-4;
+                overflow: hidden;
+                cursor: pointer;
+
+                .badge {
+                  @include flexCenter;
+                  width: 92px;
+                  height: 35px;
+                  background-color: black;
+                  font-size: 14px;
+                  color: white;
+                }
+                .options {
+                  @include flexColumn;
+                  align-items: flex-end;
+                  position: absolute;
+                  bottom: 0px;
+                  left: 0px;
+                  width: 100%;
+                  height: 156px;
+                  background-color: white;
+                  transition: bottom 0.3s ease;
+                  padding: 26px 24px 27px 0;
+
+                  .lists {
+                    @include flexColumn;
+                    align-items: flex-end;
+                    width: 100%;
+
+                    .wish-list {
+                      display: flex;
+                      column-gap: 8px;
+                      line-height: 1.19;
+                      color: $grey-2;
+                      cursor: pointer;
+                    }
+
+                    .compare {
+                      display: flex;
+                      column-gap: 8px;
+                      margin-top: 20px;
+                      line-height: 1.19;
+                      color: $grey-2;
+                      cursor: pointer;
+                    }
+
+                    .add-cart {
+                      display: flex;
+                      column-gap: 8px;
+                      margin-top: 23px;
+                      line-height: 1.19;
+                      cursor: pointer;
+                    }
+                  }
+                }
+                .open-option {
+                  bottom: 0px;
+                }
+                .close-option {
+                  bottom: -156px;
+                }
+              }
+
+              .context {
+                margin-top: 26px;
+                display: flex;
+                justify-content: space-between;
+
+                .title {
+                  font-size: 20px;
+                  line-height: 1.15;
+                }
+
+                .price {
+                  line-height: 1.88;
+                  color: $grey-2;
+                }
+              }
+
+              .detail {
+                margin-top: 22px;
+                color: $grey-2;
+              }
+            }
+          }
+
+          .nav {
+            @include flexCenterTwo;
+            position: relative;
+            width: 100%;
+            height: 36px;
+            margin: 55px 0 140px;
+
+            .moving-pages {
+              @include flexCenterTwo;
+              position: absolute;
+              left: 0px;
+              column-gap: 15px;
+
+              .moving-page {
+                @include flexCenter;
+                width: 36px;
+                height: 36px;
+                border: solid 1px #f0f0f0;
+                font-size: 14px;
+                line-height: 1.14;
+                color: $grey-2;
+                cursor: pointer;
+              }
+
+              .more {
+                height: 16px;
+                margin-left: 10px;
+                margin-right: 7px;
+              }
+
+              .open-page {
+                background-color: black;
+                color: white;
+              }
+            }
+
+            .page-info {
+              position: absolute;
+              right: 0px;
+              font-size: 14px;
+              line-height: 2.14;
+              color: $grey-2;
+            }
+          }
+        }
+      }
+    }
+  }
+}
