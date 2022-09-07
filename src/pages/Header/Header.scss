@@ -1,51 +1,49 @@
 @import "../../style/variables.scss";
 
-#root {
-  .header {
+.header {
+  @include flexCenter;
+  width: 100%;
+
+  .wrapper {
     @include flexCenter;
-    width: 100%;
+    position: relative;
+    width: 1600px;
+    height: 80px;
 
-    .wrapper {
-      @include flexCenter;
-      position: relative;
-      width: 1600px;
-      height: 80px;
+    .logo {
+      position: absolute;
+      width: 65px;
+      height: 15.2px;
+      left: 0px;
+      cursor: pointer;
+    }
 
-      .logo {
-        position: absolute;
-        width: 65px;
-        height: 15.2px;
-        left: 0px;
+    .menus {
+      display: grid;
+      grid-template-columns: repeat(5, auto);
+      gap: 41px;
+
+      .menu {
+        font-size: 14px;
+      }
+    }
+
+    .languages {
+      position: absolute;
+      right: 0px;
+      display: grid;
+      grid-template-columns: repeat(2, auto);
+      gap: 16px;
+
+      .language {
+        font-size: 14px;
+        font-weight: bold;
+        color: $grey-2;
         cursor: pointer;
       }
 
-      .menus {
-        display: grid;
-        grid-template-columns: repeat(5, auto);
-        gap: 41px;
-
-        .menu {
-          font-size: 14px;
-        }
-      }
-
-      .languages {
-        position: absolute;
-        right: 0px;
-        display: grid;
-        grid-template-columns: repeat(2, auto);
-        gap: 16px;
-
-        .language {
-          font-size: 14px;
-          font-weight: bold;
-          color: $grey-2;
-          cursor: pointer;
-        }
-
-        .clicked {
-          color: black;
-        }
+      .clicked {
+        color: black;
       }
     }
   }

@@ -23,7 +23,7 @@ const Header = () => {
   return (
     <header className="header">
       <div className="wrapper">
-        <Logo menus={menuSet} />
+        <Logo />
         <Navigation menus={menuSet} />
         <ul className="languages">
           <li

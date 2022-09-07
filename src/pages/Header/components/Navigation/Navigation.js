@@ -4,10 +4,10 @@ import { Link } from "react-router-dom";
 const Navigation = ({ menus }) => {
   return (
     <ul className="menus">
-      {menus.map((menus, idx) => {
+      {menus.map(({ id, title, path }) => {
         return (
-          <li className="menu" key={idx}>
-            <Link to={menus.path}>{menus.title}</Link>
+          <li className="menu" key={id}>
+            <Link to={path}>{title}</Link>
           </li>
         );
       })}

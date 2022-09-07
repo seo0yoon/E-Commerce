@@ -1,11 +1,10 @@
-import {combineReducers} from 'redux'
-import config from './config'
-import layouts from './layouts'
+import { combineReducers } from "redux";
+import config from "./config";
+import layouts from "./layouts";
 
 const rootReducers = combineReducers({
-    config,
-    layouts
-})
+  config,
+  layouts,
+});
 
-
-export default rootReducers
+export default rootReducers;

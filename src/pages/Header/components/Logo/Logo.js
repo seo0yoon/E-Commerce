@@ -1,10 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const Logo = ({ menus }) => {
+const Logo = () => {
   return (
     <div className="logo">
-      <Link to={menus[0].path}>
+      <Link to="/">
         <img src="/assets/header/logo.svg" alt="OBREBI" />
       </Link>
     </div>

@@ -1,7 +1,7 @@
 const initialState = {
   // 주석으로 사용한 컴포넌트를 표시
 
-  // Home
+  // Home data
   home: {
     finalOffer: {
       title: "Final Offer",
@@ -146,25 +146,30 @@ const initialState = {
     },
   ],
 
-  // Header
+  // Header menus
   menus: [
     {
+      id: "1",
       title: "Home",
       path: "/",
     },
     {
+      id: "2",
       title: "Shop",
       path: "/shop",
     },
     {
+      id: "3",
       title: "About",
       path: "/about",
     },
     {
+      id: "4",
       title: "Contacts",
       path: "/contacts",
     },
     {
+      id: "5",
       title: "Journal",
       path: "/journal",
     },
