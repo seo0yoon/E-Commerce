@@ -8,6 +8,7 @@ import Journal from "./pages/Journal/Journal";
 import NotFound from "./pages/NotFound/NotFound";
 import Login from "./pages/Login/Login";
 import SignUp from "./pages/SignUp/SignUp";
+import Contacts from "./pages/Contacts/Contacts";
 
 const App = () => {
   return (
@@ -19,6 +20,7 @@ const App = () => {
         <Route path="/journal" element={<Journal />} />
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<SignUp />} />
+        <Route path="/contacts" element={<Contacts />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
       <Footer />
