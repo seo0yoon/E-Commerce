@@ -112,15 +112,15 @@ const initialState = {
     },
     journal: [
       {
-        idx: "1",
+        id: "1",
         path: "/journal/1",
       },
       {
-        idx: "2",
+        id: "2",
         path: "/journal/2",
       },
       {
-        idx: "3",
+        id: "3",
         path: "/journal/3",
       },
     ],
