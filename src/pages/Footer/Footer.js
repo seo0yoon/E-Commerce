@@ -37,7 +37,7 @@ const Footer = () => {
         </div>
         <div className="right">
           <div className="logo">
-            <img src="/assets/Footer/logo.svg" alt="OREBI" />
+            <img src={`${process.env.PUBLIC_URL}/assets/Footer/logo.svg`} alt="OREBI" />
           </div>
           <div className="rights">2020 Orebi Minimal eCommerce Adobe XD Template by Adveits</div>
         </div>

@@ -233,10 +233,11 @@
                 transition: bottom 0.3s ease;
                 align-items: flex-end;
                 padding: 26px 24px 27px 0;
+
                 .lists {
-                  @include flexCenter;
+                  display: flex;
+                  align-items: inherit;
                   flex-direction: column;
-                  width: 100%;
                   color: $grey-2;
                   gap: 23px;
 
@@ -264,8 +265,8 @@
             //박스상자 하단 컨텐츠 제목 가격 색상
             .bottom-context {
               @include flexBetween;
-              margin-top: 26px;
               position: relative;
+              margin-top: 26px;
 
               .bottom-title {
                 font-size: 20px;
@@ -361,7 +362,7 @@
   //journal 영역 시작
   .journal {
     .wrapper {
-      padding: 131px 0 104px;
+      padding-bottom: 104px;
 
       .context {
         @include flexBetween;

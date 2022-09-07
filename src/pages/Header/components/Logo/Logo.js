@@ -5,7 +5,7 @@ const Logo = () => {
   return (
     <div className="logo">
       <Link to="/">
-        <img src="/assets/header/logo.svg" alt="OBREBI" />
+        <img src={`${process.env.PUBLIC_URL}/assets/header/logo.svg`} alt="OBREBI" />
       </Link>
     </div>
   );

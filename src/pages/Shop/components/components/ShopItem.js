@@ -1,5 +1,5 @@
-import React, { useCallback, useState } from 'react';
-import { Link } from 'react-router-dom';
+import React, { useCallback, useState } from "react";
+import { Link } from "react-router-dom";
 
 function ShopItem({ contents: { title, color, type, price, percent, path } }) {
   function sale(fl, dis) {
@@ -25,34 +25,30 @@ function ShopItem({ contents: { title, color, type, price, percent, path } }) {
       <div className="item" onMouseOver={showOptions} onMouseOut={closeOptions}>
         <div className="img-box">
           {type ? (
-            type === 'new' ? (
+            type === "new" ? (
               <div className="badge txt-bold">New</div>
             ) : (
               <div className="badge txt-bold">-{percent}%</div>
             )
           ) : undefined}
-          <div
-            className={`options ${
-              isOptionOpen ? 'open-option' : 'close-option'
-            }`}
-          >
+          <div className={`options ${isOptionOpen ? "open-option" : "close-option"}`}>
             <ul className="lists">
               <li className="wish-list">
                 <div className="context">Add to Wish List</div>
                 <div className="icon">
-                  <img src="/assets/shop/heart-icon.svg" alt="heart-icon" />
+                  <img src={`${process.env.PUBLIC_URL}/assets/shop/heart-icon.svg`} alt="heart-icon" />
                 </div>
               </li>
               <li className="compare">
                 <div className="context">Compare</div>
                 <div className="icon">
-                  <img src="/assets/shop/compare-icon.svg" alt="compare-icon" />
+                  <img src={`${process.env.PUBLIC_URL}/assets/shop/compare-icon.svg`} alt="compare-icon" />
                 </div>
               </li>
               <li className="add-cart">
                 <div className="context">Add to Cart</div>
                 <div className="icon">
-                  <img src="/assets/shop/cart-icon.svg" alt="cart-icon" />
+                  <img src={`${process.env.PUBLIC_URL}/assets/shop/cart-icon.svg`} alt="cart-icon" />
                 </div>
               </li>
             </ul>

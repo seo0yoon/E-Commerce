@@ -7,7 +7,7 @@ const Mypage = () => {
       <div className="my-menus">
         <Link to="/login">
           <div className="my-profile">
-            <img src="/assets/Search/myprofile-icon.svg" alt="내 프로필" />
+            <img src={`${process.env.PUBLIC_URL}/assets/Search/myprofile-icon.svg`} alt="내 프로필" />
           </div>
         </Link>
         <Link to="/myaccount">
@@ -21,7 +21,7 @@ const Mypage = () => {
       </div>
       <Link to="/cart">
         <div className="my-shop">
-          <img src="/assets/Search/myshop-icon.svg" alt="내 장바구니" />
+          <img src={`${process.env.PUBLIC_URL}/assets/Search/myshop-icon.svg`} alt="내 장바구니" />
         </div>
       </Link>
     </div>
