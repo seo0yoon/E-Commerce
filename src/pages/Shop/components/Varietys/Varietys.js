@@ -1,5 +1,5 @@
 import React from "react";
-import Variety from "../components/Variety";
+import Variety from "../Varietys/components/Variety";
 
 const Varietys = ({ settings: { title, icon, alt, contents } }) => {
   return (

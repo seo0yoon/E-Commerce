@@ -1,5 +1,5 @@
 import React from "react";
-import ShopItem from "../../components/components/ShopItem";
+import ShopItem from "./components/ShopItem";
 import { useSelector } from "react-redux";
 
 const ShopItems = () => {

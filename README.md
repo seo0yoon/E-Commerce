@@ -6,6 +6,5 @@
 
 - React.js
 - SASS
+- Redux
 - AWS
-
-## 내가 구현한 페이지
