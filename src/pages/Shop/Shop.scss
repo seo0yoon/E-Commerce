@@ -176,13 +176,16 @@
             .img-box {
               position: relative;
               height: 370px;
-              padding: 20px 0 0 20px;
+              margin-bottom: 26px;
               background-color: $grey-4;
               overflow: hidden;
               cursor: pointer;
 
               .badge {
                 @include flexCenter;
+                position: absolute;
+                top: 20px;
+                left: 20.5px;
                 width: 92px;
                 height: 35px;
                 background-color: black;
@@ -241,9 +244,9 @@
             }
 
             .context {
-              margin-top: 26px;
               display: flex;
               justify-content: space-between;
+              align-items: center;
 
               .title {
                 font-size: 20px;
