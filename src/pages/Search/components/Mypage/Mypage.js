@@ -15,7 +15,6 @@ const Mypage = () => {
             <option value="my-info"></option>
             <option value="my-info"></option>
             <option value="settings"></option>
-            {/* <img src="/assets/Search/mysettings-icon.svg" alt="내 설정" /> */}
           </select>
         </Link>
       </div>
