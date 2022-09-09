@@ -8,3 +8,7 @@
 - SASS
 - Redux
 - AWS
+
+## 디자인 툴
+
+- Zeplin
